@@ -1,0 +1,70 @@
+======================================================================
+MINIO CLUSTER READ PERFORMANCE BENCHMARK
+======================================================================
+
+📊 Testing read performance across 5 nodes...
+
+   [node5] Found 50 objects
+   [node3] Found 50 objects
+   [node4] Found 50 objects
+   [node1] Found 50 objects
+   [node2] Found 50 objects
+
+======================================================================
+📊 READ LATENCY RESULTS (milliseconds)
+======================================================================
+
+🔹 node1:
+   Successful reads: 50
+   Mean: 21.59 ms
+   Median: 19.70 ms
+   p95: 36.97 ms
+   p99: 40.15 ms
+   Min: 12.69 ms
+   Max: 39.33 ms
+
+🔹 node2:
+   Successful reads: 50
+   Mean: 20.36 ms
+   Median: 20.12 ms
+   p95: 29.62 ms
+   p99: 31.87 ms
+   Min: 9.94 ms
+   Max: 31.17 ms
+
+🔹 node3:
+   Successful reads: 50
+   Mean: 21.57 ms
+   Median: 20.64 ms
+   p95: 31.59 ms
+   p99: 41.49 ms
+   Min: 12.44 ms
+   Max: 38.55 ms
+
+🔹 node4:
+   Successful reads: 50
+   Mean: 21.33 ms
+   Median: 20.72 ms
+   p95: 30.71 ms
+   p99: 41.42 ms
+   Min: 10.50 ms
+   Max: 38.00 ms
+
+🔹 node5:
+   Successful reads: 50
+   Mean: 21.60 ms
+   Median: 19.22 ms
+   p95: 35.96 ms
+   p99: 60.53 ms
+   Min: 13.75 ms
+   Max: 54.68 ms
+
+======================================================================
+📊 OVERALL CLUSTER PERFORMANCE
+======================================================================
+   Total reads: 250
+   Cluster Mean: 21.29 ms
+   Cluster p95: 30.67 ms
+   Cluster p99: 41.00 ms
+
+✅ Results saved to benchmark_results.json

@@ -1,0 +1,44 @@
+[
+  {
+    "config_name": "Replication-3",
+    "config_type": "Replication",
+    "storage_overhead_percent": 200,
+    "read_mean": 17.35,
+    "read_p95": 26.97,
+    "read_p99": 55.48,
+    "read_min": 7.9,
+    "read_max": 46.45,
+    "mixed_read_mean": 7.17,
+    "mixed_read_p95": 9.71,
+    "mixed_write_mean": 23.33,
+    "mixed_write_p95": 33.34
+  },
+  {
+    "config_name": "EC-4+2",
+    "config_type": "Erasure Coding",
+    "storage_overhead_percent": 50,
+    "read_mean": 21.59,
+    "read_p95": 36.97,
+    "read_p99": 40.15,
+    "read_min": 12.69,
+    "read_max": 39.33,
+    "mixed_read_mean": 6.8,
+    "mixed_read_p95": 9.05,
+    "mixed_write_mean": 29.49,
+    "mixed_write_p95": 35.76
+  },
+  {
+    "config_name": "EC-5+2",
+    "config_type": "Erasure Coding",
+    "storage_overhead_percent": 40,
+    "read_mean": 19.09,
+    "read_p95": 29.2,
+    "read_p99": 44.09,
+    "read_min": 9.66,
+    "read_max": 39.42,
+    "mixed_read_mean": 7.74,
+    "mixed_read_p95": 11.4,
+    "mixed_write_mean": 32.83,
+    "mixed_write_p95": 48.96
+  }
+]

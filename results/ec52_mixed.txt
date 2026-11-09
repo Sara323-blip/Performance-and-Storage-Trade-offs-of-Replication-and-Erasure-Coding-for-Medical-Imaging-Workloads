@@ -1,0 +1,31 @@
+======================================================================
+MIXED WORKLOAD BENCHMARK (Clinical Simulation)
+======================================================================
+
+🏃 Running workload for 60 seconds...
+   Read %: 70% | Write %: 30%
+--------------------------------------------------
+
+======================================================================
+📊 BENCHMARK RESULTS
+======================================================================
+
+⏱️  Duration: 60 seconds
+📈 Total operations: 1428
+
+📖 READ OPERATIONS: 988
+   Mean latency: 7.74 ms
+   p50: 6.83 ms
+   p95: 11.40 ms
+   p99: 14.39 ms
+
+✍️  WRITE OPERATIONS: 440
+   Mean latency: 32.83 ms
+   p50: 29.79 ms
+   p95: 48.96 ms
+   p99: 76.51 ms
+
+🧹 Cleaning up test files...
+   Deleted 440 test files
+
+✅ Benchmark complete!

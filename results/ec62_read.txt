@@ -1,0 +1,27 @@
+======================================================================
+MINIO CLUSTER READ PERFORMANCE BENCHMARK
+======================================================================
+
+📊 Testing read performance across 5 nodes...
+
+
+======================================================================
+📊 READ LATENCY RESULTS (milliseconds)
+======================================================================
+
+🔹 node1:
+   ❌ Error: Could not connect to the endpoint URL: "http://localhost:9101/dicom-images?list-type=2&max-keys=50&encoding-type=url"
+
+🔹 node2:
+   ❌ Error: Could not connect to the endpoint URL: "http://localhost:9102/dicom-images?list-type=2&max-keys=50&encoding-type=url"
+
+🔹 node3:
+   ❌ Error: Could not connect to the endpoint URL: "http://localhost:9103/dicom-images?list-type=2&max-keys=50&encoding-type=url"
+
+🔹 node4:
+   ❌ Error: Could not connect to the endpoint URL: "http://localhost:9104/dicom-images?list-type=2&max-keys=50&encoding-type=url"
+
+🔹 node5:
+   ❌ Error: Could not connect to the endpoint URL: "http://localhost:9105/dicom-images?list-type=2&max-keys=50&encoding-type=url"
+
+✅ Results saved to benchmark_results.json

@@ -1,0 +1,16 @@
+
+\begin{table}[htbp]
+\centering
+\caption{Performance Comparison: Replication vs. Erasure Coding for DICOM Storage}
+\label{tab:storage_comparison}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Configuration} & \textbf{Type} & \textbf{Storage Overhead} & \textbf{Read Mean} & \textbf{Read p95} & \textbf{Mixed Read} & \textbf{Mixed Write} \\
+\midrule
+Replication-3 & Replication & 200\% & 17.4 ms & 27.0 ms & 7.2 ms & 23.3 ms \\
+EC-4+2 & Erasure Coding & 50\% & 21.6 ms & 37.0 ms & 6.8 ms & 29.5 ms \\
+EC-5+2 & Erasure Coding & 40\% & 19.1 ms & 29.2 ms & 7.7 ms & 32.8 ms \\
+
+\bottomrule
+\end{tabular}
+\end{table}
