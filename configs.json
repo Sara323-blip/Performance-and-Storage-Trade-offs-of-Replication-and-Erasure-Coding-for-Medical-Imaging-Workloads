@@ -1,0 +1,43 @@
+{
+  "image": "quay.io/minio/minio:RELEASE.2024-12-13T22-19-12Z",
+  "bucket": "dicom-images",
+  "user": "minioadmin",
+  "password": "minioadmin123",
+  "dataset_dir": "dicom_files",
+  "configs": {
+    "ec-4+2": {
+      "label": "EC 4+2", "type": "ec", "compose": "compose/ec6.yml", "env": {"PARITY": "2"},
+      "nodes": 3, "drives": 6, "k": 4, "m": 2,
+      "note": "6 drives (3 nodes x 2): one 6-drive erasure set, parity 2"
+    },
+    "ec-5+2": {
+      "label": "EC 5+2", "type": "ec", "compose": "compose/ec7.yml", "env": {"PARITY": "2"},
+      "nodes": 7, "drives": 7, "k": 5, "m": 2,
+      "note": "7 drives (7 nodes x 1): one 7-drive erasure set, parity 2"
+    },
+    "ec10-8+2": {
+      "label": "EC 8+2 (10 drives)", "type": "ec", "compose": "compose/ec10.yml", "env": {"PARITY": "2"},
+      "nodes": 5, "drives": 10, "k": 8, "m": 2,
+      "note": "parity sweep on the 5 x 2 = 10-drive cluster of the first version of the study"
+    },
+    "ec10-7+3": {
+      "label": "EC 7+3 (10 drives)", "type": "ec", "compose": "compose/ec10.yml", "env": {"PARITY": "3"},
+      "nodes": 5, "drives": 10, "k": 7, "m": 3,
+      "note": "parity sweep, 10 drives"
+    },
+    "ec10-6+4": {
+      "label": "EC 6+4 (10 drives)", "type": "ec", "compose": "compose/ec10.yml", "env": {"PARITY": "4"},
+      "nodes": 5, "drives": 10, "k": 6, "m": 4,
+      "note": "parity sweep, 10 drives; this is MinIO's default parity for a 10-drive set"
+    },
+    "repl-3": {
+      "label": "Replication x3 (client-side)", "type": "replication", "compose": "compose/repl3.yml", "env": {},
+      "nodes": 3, "drives": 3, "copies": 3,
+      "note": "three independent single-drive servers; the client writes every object to all three"
+    }
+  },
+  "read": {"warmup": 50, "reads": 200, "seed": 1, "concurrency": 1},
+  "mixed": {"duration_sec": 60, "warmup_sec": 5, "read_pct": 70, "seed": 2},
+  "repetitions": 5,
+  "failure": {"reads": 100, "down_counts": [0, 1, 2]}
+}
